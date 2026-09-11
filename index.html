@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -257,7 +257,7 @@
   .shop-card-btn:disabled{background:#333;color:#777;cursor:not-allowed;}
   .shop-card-btn.owned-btn{background:transparent;border:1px solid var(--cyan);color:var(--cyan);}
   .premium-badge{position:absolute;top:8px;right:8px;background:linear-gradient(135deg,#b8860b,#ffd700);color:#111;font-family:'Share Tech Mono',monospace;font-size:9px;font-weight:700;padding:2px 6px;letter-spacing:1px;}
-  .wpn-opt.premium .n::after{content:' ★';color:#ffd700;font-size:10px;}
+  .wpn-opt.premium .n::after{content:' ??;color:#ffd700;font-size:10px;}
 
   /* ===== RANKING MODAL ===== */
   #rankingModal{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,0.96);display:none;flex-direction:column;align-items:center;padding:28px 16px 20px;overflow-y:auto;}
@@ -286,10 +286,10 @@
 <div id="loginScreen">
   <div class="login-eyebrow">SEASON 1 // CITY BLOCK 09</div>
   <div class="login-logo">URBAN <span>DROP</span></div>
-  <div class="login-sub">1인칭 배틀로얄 — 구글 계정으로 시작하세요</div>
+  <div class="login-sub">1?몄묶 諛고?濡쒖뻹 ??援ш? 怨꾩젙?쇰줈 ?쒖옉?섏꽭??/div>
   <button id="googleLoginBtn">
     <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
-    구글 계정으로 시작
+    援ш? 怨꾩젙?쇰줈 ?쒖옉
   </button>
   <div id="loginError"></div>
 </div>
@@ -297,113 +297,113 @@
 <!-- ===== NICKNAME MODAL ===== -->
 <div id="nicknameModal">
   <div class="modal-box">
-    <div class="modal-title">닉네임 설정</div>
-    <div class="modal-sub">게임에서 사용할 닉네임을 입력하세요 (2~12자)</div>
-    <input id="nicknameInput" class="modal-input" type="text" maxlength="12" placeholder="닉네임 입력...">
+    <div class="modal-title">?됰꽕???ㅼ젙</div>
+    <div class="modal-sub">寃뚯엫?먯꽌 ?ъ슜???됰꽕?꾩쓣 ?낅젰?섏꽭??(2~12??</div>
+    <input id="nicknameInput" class="modal-input" type="text" maxlength="12" placeholder="?됰꽕???낅젰...">
     <br>
-    <button class="modal-btn" id="nicknameConfirmBtn">확인</button>
+    <button class="modal-btn" id="nicknameConfirmBtn">?뺤씤</button>
     <div class="modal-err" id="nicknameError"></div>
   </div>
 </div>
 
 <!-- ===== SHOP MODAL ===== -->
 <div id="shopModal">
-  <div class="shop-main-title">🏪 무기 상점</div>
-  <div class="shop-cash-display" id="shopCashDisplay">보유 캐시: 0 💰</div>
-  <button class="shop-close-btn" id="shopCloseBtn">✕ 닫기</button>
-  <div class="shop-section">권총 PISTOL</div>
+  <div class="shop-main-title">?룵 臾닿린 ?곸젏</div>
+  <div class="shop-cash-display" id="shopCashDisplay">蹂댁쑀 罹먯떆: 0 ?뮥</div>
+  <button class="shop-close-btn" id="shopCloseBtn">???リ린</button>
+  <div class="shop-section">沅뚯킑 PISTOL</div>
   <div class="shop-grid" id="shopPistols"></div>
-  <div class="shop-section">소총 RIFLE</div>
+  <div class="shop-section">?뚯킑 RIFLE</div>
   <div class="shop-grid" id="shopRifles"></div>
-  <div class="shop-section">칼 KNIFE</div>
+  <div class="shop-section">移?KNIFE</div>
   <div class="shop-grid" id="shopKnives"></div>
-  <div class="shop-section">폭탄 BOMB</div>
+  <div class="shop-section">??깂 BOMB</div>
   <div class="shop-grid" id="shopBombs"></div>
 </div>
 
 <!-- ===== RANKING MODAL ===== -->
 <div id="rankingModal">
-  <div class="ranking-title">🏆 실시간 랭킹</div>
+  <div class="ranking-title">?룇 ?ㅼ떆媛???궧</div>
   <div class="ranking-header">
-    <span>순위</span><span>닉네임</span>
-    <span style="text-align:right">승리</span>
-    <span style="text-align:right">킬</span>
-    <span style="text-align:right">캐시</span>
+    <span>?쒖쐞</span><span>?됰꽕??/span>
+    <span style="text-align:right">?밸━</span>
+    <span style="text-align:right">??/span>
+    <span style="text-align:right">罹먯떆</span>
   </div>
   <div id="rankingList"></div>
-  <button class="ranking-close-btn" id="rankingCloseBtn">닫기</button>
+  <button class="ranking-close-btn" id="rankingCloseBtn">?リ린</button>
 </div>
 
 <!-- MENU -->
 <div id="menu">
   <input type="text" id="cheatInput" autocomplete="off" autocorrect="off" spellcheck="false"
     style="position:absolute; opacity:0; width:1px; height:1px; pointer-events:none; top:0; left:0;">
-  <div id="devModeToast">개발자 모드 활성화됨 &mdash; 시작 시 적용</div>
+  <div id="devModeToast">媛쒕컻??紐⑤뱶 ?쒖꽦?붾맖 &mdash; ?쒖옉 ???곸슜</div>
 
-  <!-- 플레이어 정보 바 -->
+  <!-- ?뚮젅?댁뼱 ?뺣낫 諛?-->
   <div id="playerInfo">
     <img id="playerAvatar" src="https://www.gravatar.com/avatar/?d=mp" alt="">
     <span id="playerNickname">-</span>
     <div class="menu-action-row">
-      <button class="menu-action-btn shop" onclick="window.showShop()">🏪 상점</button>
-      <button class="menu-action-btn rank" onclick="window.showRanking()">🏆 랭킹</button>
-      <button class="menu-action-btn" onclick="window.doLogout()">로그아웃</button>
+      <button class="menu-action-btn shop" onclick="window.showShop()">?룵 ?곸젏</button>
+      <button class="menu-action-btn rank" onclick="window.showRanking()">?룇 ??궧</button>
+      <button class="menu-action-btn" onclick="window.doLogout()">濡쒓렇?꾩썐</button>
     </div>
-    <span id="playerCash">0 💰</span>
+    <span id="playerCash">0 ?뮥</span>
   </div>
 
   <div class="menu-head">
     <div class="menu-eyebrow">SEASON 1 // CITY BLOCK 09</div>
     <div class="menu-title">URBAN <span>DROP</span></div>
-    <div class="menu-sub">1인칭 배틀로얄 &mdash; 마지막 1인이 될 때까지 생존하라</div>
+    <div class="menu-sub">1?몄묶 諛고?濡쒖뻹 &mdash; 留덉?留?1?몄씠 ???뚭퉴吏 ?앹〈?섎씪</div>
   </div>
 
-  <div class="section-label">게임 모드 MODE</div>
+  <div class="section-label">寃뚯엫 紐⑤뱶 MODE</div>
   <div class="diff-row" id="modeRow"></div>
 
-  <div class="section-label">멀티플레이어 (실험적, 서버 없이 P2P 직접 연결) <span id="mpStatus" style="color:#7d8c85;">연결 안 됨</span></div>
+  <div class="section-label">硫?고뵆?덉씠??(?ㅽ뿕?? ?쒕쾭 ?놁씠 P2P 吏곸젒 ?곌껐) <span id="mpStatus" style="color:#7d8c85;">?곌껐 ????/span></div>
   <div id="mpPanel">
     <div id="mpChoiceRow">
-      <button class="mp-btn" id="mpHostBtn">방 만들기 (호스트)</button>
-      <button class="mp-btn" id="mpJoinBtn">참가하기</button>
-      <button class="mp-btn" id="mpSoloBtn">혼자 플레이</button>
+      <button class="mp-btn" id="mpHostBtn">諛?留뚮뱾湲?(?몄뒪??</button>
+      <button class="mp-btn" id="mpJoinBtn">李멸??섍린</button>
+      <button class="mp-btn" id="mpSoloBtn">?쇱옄 ?뚮젅??/button>
     </div>
 
     <div id="mpHostFlow" style="display:none;">
-      <div class="mp-step">1. 아래 코드가 생성되면 전체 복사해서 친구에게 보내세요.</div>
-      <textarea id="mpOfferCode" class="mp-code" readonly placeholder="초대 코드 생성 중..."></textarea>
-      <button class="mp-btn small" id="mpCopyOffer">코드 복사</button>
-      <div class="mp-step">2. 친구가 보내준 "참가 코드"를 아래에 붙여넣고 연결하세요.</div>
-      <textarea id="mpAnswerInput" class="mp-code" placeholder="친구의 참가 코드를 여기 붙여넣기"></textarea>
-      <button class="mp-btn small" id="mpCompleteConnect">연결 완료</button>
+      <div class="mp-step">1. ?꾨옒 肄붾뱶媛 ?앹꽦?섎㈃ ?꾩껜 蹂듭궗?댁꽌 移쒓뎄?먭쾶 蹂대궡?몄슂.</div>
+      <textarea id="mpOfferCode" class="mp-code" readonly placeholder="珥덈? 肄붾뱶 ?앹꽦 以?.."></textarea>
+      <button class="mp-btn small" id="mpCopyOffer">肄붾뱶 蹂듭궗</button>
+      <div class="mp-step">2. 移쒓뎄媛 蹂대궡以 "李멸? 肄붾뱶"瑜??꾨옒??遺숈뿬?ｊ퀬 ?곌껐?섏꽭??</div>
+      <textarea id="mpAnswerInput" class="mp-code" placeholder="移쒓뎄??李멸? 肄붾뱶瑜??ш린 遺숈뿬?ｊ린"></textarea>
+      <button class="mp-btn small" id="mpCompleteConnect">?곌껐 ?꾨즺</button>
     </div>
 
     <div id="mpJoinFlow" style="display:none;">
-      <div class="mp-step">1. 친구에게 받은 "초대 코드"를 아래에 붙여넣으세요.</div>
-      <textarea id="mpOfferInput" class="mp-code" placeholder="친구의 초대 코드를 여기 붙여넣기"></textarea>
-      <button class="mp-btn small" id="mpGenAnswer">참가 코드 생성</button>
-      <div class="mp-step">2. 생성된 코드를 복사해서 친구에게 다시 보내세요.</div>
-      <textarea id="mpAnswerCode" class="mp-code" readonly placeholder="참가 코드가 여기 생성됩니다"></textarea>
-      <button class="mp-btn small" id="mpCopyAnswer">코드 복사</button>
+      <div class="mp-step">1. 移쒓뎄?먭쾶 諛쏆? "珥덈? 肄붾뱶"瑜??꾨옒??遺숈뿬?ｌ쑝?몄슂.</div>
+      <textarea id="mpOfferInput" class="mp-code" placeholder="移쒓뎄??珥덈? 肄붾뱶瑜??ш린 遺숈뿬?ｊ린"></textarea>
+      <button class="mp-btn small" id="mpGenAnswer">李멸? 肄붾뱶 ?앹꽦</button>
+      <div class="mp-step">2. ?앹꽦??肄붾뱶瑜?蹂듭궗?댁꽌 移쒓뎄?먭쾶 ?ㅼ떆 蹂대궡?몄슂.</div>
+      <textarea id="mpAnswerCode" class="mp-code" readonly placeholder="李멸? 肄붾뱶媛 ?ш린 ?앹꽦?⑸땲??></textarea>
+      <button class="mp-btn small" id="mpCopyAnswer">肄붾뱶 蹂듭궗</button>
     </div>
   </div>
 
-  <div class="section-label">난이도 선택 DIFFICULTY</div>
+  <div class="section-label">?쒖씠???좏깮 DIFFICULTY</div>
   <div class="diff-row" id="diffRow"></div>
 
-  <div class="section-label">무기 로드아웃 SELECT LOADOUT (카테고리별 1개씩)</div>
+  <div class="section-label">臾닿린 濡쒕뱶?꾩썐 SELECT LOADOUT (移댄뀒怨좊━蹂?1媛쒖뵫)</div>
   <div class="loadout-grid" id="loadoutGrid"></div>
 
-  <button id="startBtn">드롭 시작 &nbsp;DROP IN</button>
-  <div id="startHint">난이도와 4개 카테고리 무기를 모두 선택하세요</div>
+  <button id="startBtn">?쒕∼ ?쒖옉 &nbsp;DROP IN</button>
+  <div id="startHint">?쒖씠?꾩? 4媛?移댄뀒怨좊━ 臾닿린瑜?紐⑤몢 ?좏깮?섏꽭??/div>
 </div>
 
 <!-- BLOCKER -->
 <div id="blocker">
-  <h2>클릭하여 조준 잠금</h2>
-  <p>WASD 이동 · 마우스 시점 · 좌클릭 공격/발사<br>
-     1/2/3/4 무기 전환 · R 재장전 · SPACE 점프 · SHIFT 달리기 · E 조준<br>
-     ESC 일시정지</p>
+  <h2>?대┃?섏뿬 議곗? ?좉툑</h2>
+  <p>WASD ?대룞 쨌 留덉슦???쒖젏 쨌 醫뚰겢由?怨듦꺽/諛쒖궗<br>
+     1/2/3/4 臾닿린 ?꾪솚 쨌 R ?ъ옣??쨌 SPACE ?먰봽 쨌 SHIFT ?щ━湲?쨌 E 議곗?<br>
+     ESC ?쇱떆?뺤?</p>
 </div>
 
 <!-- HUD -->
@@ -425,8 +425,8 @@
   </div>
 
   <div id="topCenter">
-    <div id="aliveCount">생존자 <span id="aliveNum">0</span> &nbsp;·&nbsp; 킬 <span id="killNum">0</span></div>
-    <div id="zoneTimer">구역 축소까지: --</div>
+    <div id="aliveCount">?앹〈??<span id="aliveNum">0</span> &nbsp;쨌&nbsp; ??<span id="killNum">0</span></div>
+    <div id="zoneTimer">援ъ뿭 異뺤냼源뚯?: --</div>
   </div>
 
   <div id="pickupToast"></div>
@@ -438,14 +438,14 @@
     <div class="bar-row"><span class="bar-label">HP</span><div class="bar-track"><div class="bar-fill" id="healthFill"></div></div></div>
     <div class="bar-row"><span class="bar-label">SHLD</span><div class="bar-track"><div class="bar-fill" id="shieldFill"></div></div></div>
     <div class="bar-row"><span class="bar-label">ZONE</span><div class="bar-track"><div class="bar-fill" id="zoneFill"></div></div></div>
-    <div id="bombCharge">폭탄: 0</div>
-    <div id="hudCash">💰 0</div>
+    <div id="bombCharge">??깂: 0</div>
+    <div id="hudCash">?뮥 0</div>
   </div>
 
   <div id="bottomRight">
     <div id="weaponName">-</div>
     <div id="ammoCount">0 <span>/ 0</span></div>
-    <div id="lowAmmo">재장전 필요 [R]</div>
+    <div id="lowAmmo">?ъ옣???꾩슂 [R]</div>
     <div id="slotRow">
       <div class="slot" id="slot0">1</div>
       <div class="slot" id="slot1">2</div>
@@ -455,13 +455,13 @@
   </div>
 
   <div id="aimIndicator">AIMING [E]</div>
-  <div id="devTag">DEV MODE // FLY · HOMING · TELEPORT</div>
+  <div id="devTag">DEV MODE // FLY 쨌 HOMING 쨌 TELEPORT</div>
 </div>
 
 <!-- SPECTATOR / KILLCAM -->
 <div id="spectateBar">
-  <div id="spectateLabel">관전 중: <span id="spectateName">-</span></div>
-  <button id="skipResultsBtn">결과 보기</button>
+  <div id="spectateLabel">愿??以? <span id="spectateName">-</span></div>
+  <button id="skipResultsBtn">寃곌낵 蹂닿린</button>
 </div>
 
 <!-- END SCREEN -->
@@ -470,7 +470,7 @@
   <div id="endSub">-</div>
   <div id="endCashEarned"></div>
   <div id="endStats"></div>
-  <button id="restartBtn">다시 시작</button>
+  <button id="restartBtn">?ㅼ떆 ?쒖옉</button>
 </div>
 
 <!-- Firebase SDKs (compat 9) -->
@@ -481,7 +481,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 // ============================================================
-//  FIREBASE 초기화
+//  FIREBASE 珥덇린??
 // ============================================================
 const _fbConfig = {
   apiKey: "AIzaSyA0anHkxzCCeL7WaYLymO3ExCrH-0A1iEE",
@@ -496,30 +496,30 @@ firebase.initializeApp(_fbConfig);
 const _auth = firebase.auth();
 const _db   = firebase.firestore();
 
-// ===== 전역 사용자 상태 =====
+// ===== ?꾩뿭 ?ъ슜???곹깭 =====
 window._currentUser = null;
-window._userData = { nickname:'게스트', cash:100, ownedWeapons:[], wins:0, kills:0, gamesPlayed:0 };
+window._userData = { nickname:'寃뚯뒪??, cash:100, ownedWeapons:[], wins:0, kills:0, gamesPlayed:0 };
 window._currentRanking = [];
 let _rankUnsub = null;
 
-// ===== 상점 아이템 =====
+// ===== ?곸젏 ?꾩씠??=====
 window.SHOP_ITEMS = [
-  {cat:'pistol', id:'golden_eagle',  name:'골든 이글',    dmg:58, fireRate:350, mag:8,  reserve:32,  spread:0.013, kind:'hitscan',           price:500, desc:'황금 도금 강화형 데저트 이글'},
-  {cat:'pistol', id:'plasma_pistol', name:'플라즈마 피스톨',dmg:27,fireRate:105,mag:24, reserve:96,  spread:0.008, kind:'hitscan', auto:true,  price:380, desc:'에너지 탄 자동사격 권총'},
-  {cat:'rifle',  id:'scar_h',        name:'SCAR-H',       dmg:38, fireRate:118, mag:25, reserve:100, spread:0.015, kind:'hitscan', auto:true,  price:650, desc:'특수부대용 고성능 전투소총'},
-  {cat:'rifle',  id:'railgun',       name:'레일건',        dmg:180,fireRate:2400,mag:2,  reserve:8,   spread:0.001, kind:'hitscan',            price:900, desc:'전자기 가속 관통 저격총'},
-  {cat:'knife',  id:'energy_blade',  name:'에너지 검',     dmg:88, range:3.2,   cd:300,                            kind:'melee',              price:550, desc:'플라즈마 날 고데미지 근접무기'},
-  {cat:'knife',  id:'war_scythe',    name:'전쟁 낫',       dmg:72, range:3.8,   cd:420,                            kind:'melee',              price:480, desc:'광범위한 사거리의 대형 낫'},
-  {cat:'bomb',   id:'cluster_bomb',  name:'집속 폭탄',     dmg:120,radius:12,   count:2,fuse:1800,                 kind:'throw',kind2:'frag',  price:600, desc:'3배 반경 광역 폭발'},
-  {cat:'bomb',   id:'nuke_grenade',  name:'핵 수류탄',     dmg:300,radius:18,   count:1,fuse:3000,                 kind:'throw',kind2:'frag',  price:999, desc:'전장을 초토화하는 최강 폭탄'},
+  {cat:'pistol', id:'golden_eagle',  name:'怨⑤뱺 ?닿?',    dmg:58, fireRate:350, mag:8,  reserve:32,  spread:0.013, kind:'hitscan',           price:500, desc:'?⑷툑 ?꾧툑 媛뺥솕???곗????닿?'},
+  {cat:'pistol', id:'plasma_pistol', name:'?뚮씪利덈쭏 ?쇱뒪??,dmg:27,fireRate:105,mag:24, reserve:96,  spread:0.008, kind:'hitscan', auto:true,  price:380, desc:'?먮꼫吏 ???먮룞?ш꺽 沅뚯킑'},
+  {cat:'rifle',  id:'scar_h',        name:'SCAR-H',       dmg:38, fireRate:118, mag:25, reserve:100, spread:0.015, kind:'hitscan', auto:true,  price:650, desc:'?뱀닔遺???怨좎꽦???꾪닾?뚯킑'},
+  {cat:'rifle',  id:'railgun',       name:'?덉씪嫄?,        dmg:180,fireRate:2400,mag:2,  reserve:8,   spread:0.001, kind:'hitscan',            price:900, desc:'?꾩옄湲?媛??愿???寃⑹킑'},
+  {cat:'knife',  id:'energy_blade',  name:'?먮꼫吏 寃',     dmg:88, range:3.2,   cd:300,                            kind:'melee',              price:550, desc:'?뚮씪利덈쭏 ??怨좊뜲誘몄? 洹쇱젒臾닿린'},
+  {cat:'knife',  id:'war_scythe',    name:'?꾩웳 ??,       dmg:72, range:3.8,   cd:420,                            kind:'melee',              price:480, desc:'愿묐쾾?꾪븳 ?ш굅由ъ쓽 ?????},
+  {cat:'bomb',   id:'cluster_bomb',  name:'吏묒냽 ??깂',     dmg:120,radius:12,   count:2,fuse:1800,                 kind:'throw',kind2:'frag',  price:600, desc:'3諛?諛섍꼍 愿묒뿭 ??컻'},
+  {cat:'bomb',   id:'nuke_grenade',  name:'???섎쪟??,     dmg:300,radius:18,   count:1,fuse:3000,                 kind:'throw',kind2:'frag',  price:999, desc:'?꾩옣??珥덊넗?뷀븯??理쒓컯 ??깂'},
 ];
 
-// ===== 사용자 데이터 로드 =====
+// ===== ?ъ슜???곗씠??濡쒕뱶 =====
 async function _loadUser(uid){
   try{
     const snap = await _db.collection('users').doc(uid).get();
     if(snap.exists){ window._userData = {...window._userData, ...snap.data()}; return false; }
-    return true; // 신규
+    return true; // ?좉퇋
   }catch(e){ console.error(e); return false; }
 }
 
@@ -532,7 +532,7 @@ async function _saveNickname(nick){
   }catch(e){ console.error(e); }
 }
 
-// ===== 게임 결과 저장 (캐시 지급) =====
+// ===== 寃뚯엫 寃곌낵 ???(罹먯떆 吏湲? =====
 window.saveGameResult = async function(won, rank, kills){
   const cashEarned = (won?200:0) + kills*10 + (rank<=5?50:0) + 5;
   window._userData.cash  += cashEarned;
@@ -556,7 +556,7 @@ window.saveGameResult = async function(won, rank, kills){
   return cashEarned;
 };
 
-// ===== 무기 구매 =====
+// ===== 臾닿린 援щℓ =====
 window.purchaseWeapon = async function(item){
   if(window._userData.cash < item.price) return false;
   if(window._userData.ownedWeapons.includes(item.id)) return false;
@@ -570,7 +570,7 @@ window.purchaseWeapon = async function(item){
   return true;
 };
 
-// ===== 랭킹 구독 =====
+// ===== ??궧 援щ룆 =====
 function _subRanking(){
   if(_rankUnsub) _rankUnsub();
   try{
@@ -585,25 +585,25 @@ function _subRanking(){
 function _renderRankingList(list){
   const el = document.getElementById('rankingList'); if(!el) return;
   el.innerHTML = '';
-  if(!list.length){ el.innerHTML='<div style="font-family:Share Tech Mono,monospace;font-size:12px;color:#7d8c85;padding:16px;text-align:center">아직 랭킹 데이터가 없습니다</div>'; return; }
+  if(!list.length){ el.innerHTML='<div style="font-family:Share Tech Mono,monospace;font-size:12px;color:#7d8c85;padding:16px;text-align:center">?꾩쭅 ??궧 ?곗씠?곌? ?놁뒿?덈떎</div>'; return; }
   list.forEach((e,i)=>{
     const me = window._currentUser && e.uid===window._currentUser.uid;
     const pc = i===0?'gold':i===1?'silver':i===2?'bronze':'';
     const row = document.createElement('div');
     row.className = 'rank-row'+(me?' me':'');
-    row.innerHTML = `<span class="rank-pos ${pc}">#${i+1}</span><span class="rank-name">${e.nickname||'?'}${me?' 👤':''}</span><span class="rank-wins">${e.wins||0}승</span><span class="rank-kills">${e.kills||0}킬</span><span class="rank-cash">${e.cash||0}💰</span>`;
+    row.innerHTML = `<span class="rank-pos ${pc}">#${i+1}</span><span class="rank-name">${e.nickname||'?'}${me?' ?뫀':''}</span><span class="rank-wins">${e.wins||0}??/span><span class="rank-kills">${e.kills||0}??/span><span class="rank-cash">${e.cash||0}?뮥</span>`;
     el.appendChild(row);
   });
 }
 
-// ===== UI 업데이트 =====
+// ===== UI ?낅뜲?댄듃 =====
 function _updateInfoUI(){
   const d = window._userData;
   const nn=document.getElementById('playerNickname'), pc=document.getElementById('playerCash'), hc=document.getElementById('hudCash'), sc=document.getElementById('shopCashDisplay');
   if(nn) nn.textContent = d.nickname;
-  if(pc) pc.textContent = d.cash+' 💰';
-  if(hc){ hc.textContent = '💰 '+d.cash; hc.style.display='block'; }
-  if(sc) sc.textContent = '보유 캐시: '+d.cash+' 💰';
+  if(pc) pc.textContent = d.cash+' ?뮥';
+  if(hc){ hc.textContent = '?뮥 '+d.cash; hc.style.display='block'; }
+  if(sc) sc.textContent = '蹂댁쑀 罹먯떆: '+d.cash+' ?뮥';
 }
 
 function _showMenu(){
@@ -615,7 +615,7 @@ function _showMenu(){
   _subRanking();
 }
 
-// ===== 상점 렌더 =====
+// ===== ?곸젏 ?뚮뜑 =====
 window.showShop = function(){
   document.getElementById('shopModal').style.display='flex';
   _updateInfoUI();
@@ -627,12 +627,12 @@ window.showShop = function(){
       const owned=window._userData.ownedWeapons.includes(item.id);
       const canAfford=window._userData.cash>=item.price;
       let stat='';
-      if(item.kind==='hitscan') stat=`DMG ${item.dmg} · MAG ${item.mag}`;
-      else if(item.kind==='melee') stat=`DMG ${item.dmg} · 사거리 ${item.range}`;
-      else stat=`DMG ${item.dmg} · 반경 ${item.radius}`;
+      if(item.kind==='hitscan') stat=`DMG ${item.dmg} 쨌 MAG ${item.mag}`;
+      else if(item.kind==='melee') stat=`DMG ${item.dmg} 쨌 ?ш굅由?${item.range}`;
+      else stat=`DMG ${item.dmg} 쨌 諛섍꼍 ${item.radius}`;
       const card=document.createElement('div');
       card.className='shop-card'+(owned?' owned':'')+((!canAfford&&!owned)?' cant-afford':'');
-      card.innerHTML=`<div class="premium-badge">PREMIUM</div><div class="shop-card-name">${item.name}</div><div class="shop-card-desc">${item.desc}</div><div class="shop-card-stats">${stat}</div><div class="shop-card-price">${item.price} 💰</div><button class="shop-card-btn ${owned?'owned-btn':''}" ${(owned||!canAfford)?'disabled':''} onclick="window._handleBuy('${item.id}')">${owned?'✓ 보유 중':canAfford?'구매':'캐시 부족'}</button>`;
+      card.innerHTML=`<div class="premium-badge">PREMIUM</div><div class="shop-card-name">${item.name}</div><div class="shop-card-desc">${item.desc}</div><div class="shop-card-stats">${stat}</div><div class="shop-card-price">${item.price} ?뮥</div><button class="shop-card-btn ${owned?'owned-btn':''}" ${(owned||!canAfford)?'disabled':''} onclick="window._handleBuy('${item.id}')">${owned?'??蹂댁쑀 以?:canAfford?'援щℓ':'罹먯떆 遺議?}</button>`;
       cont.appendChild(card);
     });
   });
@@ -641,18 +641,18 @@ window.showShop = function(){
 window._handleBuy = async function(id){
   const item=window.SHOP_ITEMS.find(i=>i.id===id); if(!item) return;
   const ok=await window.purchaseWeapon(item);
-  if(ok){ window.showShop(); alert(`🎉 ${item.name} 구매!\n보유 캐시: ${window._userData.cash} 💰`); }
-  else alert(window._userData.ownedWeapons.includes(id)?'이미 보유 중':'캐시 부족');
+  if(ok){ window.showShop(); alert(`?럦 ${item.name} 援щℓ!\n蹂댁쑀 罹먯떆: ${window._userData.cash} ?뮥`); }
+  else alert(window._userData.ownedWeapons.includes(id)?'?대? 蹂댁쑀 以?:'罹먯떆 遺議?);
 };
 
-// ===== 랭킹 모달 =====
+// ===== ??궧 紐⑤떖 =====
 window.showRanking = function(){
   document.getElementById('rankingModal').style.display='flex';
   _renderRankingList(window._currentRanking);
   _subRanking();
 };
 
-// ===== 로그아웃 =====
+// ===== 濡쒓렇?꾩썐 =====
 window.doLogout = async function(){
   if(_rankUnsub) _rankUnsub();
   await _auth.signOut();
@@ -661,25 +661,25 @@ window.doLogout = async function(){
   document.getElementById('loginScreen').style.display='flex';
 };
 
-// ===== 이벤트 바인딩 =====
+// ===== ?대깽??諛붿씤??=====
 document.getElementById('googleLoginBtn').addEventListener('click', async ()=>{
   try{ await _auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()); }
-  catch(e){ document.getElementById('loginError').textContent='로그인 실패: '+e.message; }
+  catch(e){ document.getElementById('loginError').textContent='濡쒓렇???ㅽ뙣: '+e.message; }
 });
 document.getElementById('shopCloseBtn').addEventListener('click',   ()=>{ document.getElementById('shopModal').style.display='none'; });
 document.getElementById('rankingCloseBtn').addEventListener('click', ()=>{ document.getElementById('rankingModal').style.display='none'; });
 document.getElementById('nicknameConfirmBtn').addEventListener('click', async ()=>{
   const val=document.getElementById('nicknameInput').value.trim();
   const err=document.getElementById('nicknameError');
-  if(val.length<2){ err.textContent='최소 2자 이상'; return; }
-  if(val.length>12){ err.textContent='12자 이하'; return; }
+  if(val.length<2){ err.textContent='理쒖냼 2???댁긽'; return; }
+  if(val.length>12){ err.textContent='12???댄븯'; return; }
   err.textContent='';
   await _saveNickname(val);
   document.getElementById('nicknameModal').style.display='none';
   _showMenu();
 });
 
-// ===== AUTH 상태 감지 =====
+// ===== AUTH ?곹깭 媛먯? =====
 _auth.onAuthStateChanged(async user=>{
   if(user){
     window._currentUser=user;
@@ -702,49 +702,49 @@ _auth.onAuthStateChanged(async user=>{
 /* ===================== WEAPON DATA ===================== */
 const WEAPON_DATA = {
   pistol: [
-    {id:'glock',  name:'글록 19',        dmg:18, fireRate:230, mag:17, reserve:68, spread:0.012, kind:'hitscan'},
-    {id:'deagle', name:'데저트 이글',     dmg:36, fireRate:430, mag:7,  reserve:35, spread:0.02,  kind:'hitscan'},
-    {id:'revolver',name:'매그넘 리볼버',  dmg:48, fireRate:600, mag:6,  reserve:24, spread:0.018, kind:'hitscan'},
-    {id:'p226',   name:'P226 택티컬',     dmg:22, fireRate:180, mag:15, reserve:60, spread:0.014, kind:'hitscan'},
-    {id:'fiveseven', name:'파이브세븐',   dmg:20, fireRate:150, mag:20, reserve:80, spread:0.013, kind:'hitscan'},
-    {id:'suppressed', name:'소음 권총',   dmg:16, fireRate:220, mag:12, reserve:48, spread:0.01,  kind:'hitscan'},
+    {id:'glock',  name:'湲濡?19',        dmg:18, fireRate:230, mag:17, reserve:68, spread:0.012, kind:'hitscan'},
+    {id:'deagle', name:'?곗????닿?',     dmg:36, fireRate:430, mag:7,  reserve:35, spread:0.02,  kind:'hitscan'},
+    {id:'revolver',name:'留ㅺ렇??由щ낵踰?,  dmg:48, fireRate:600, mag:6,  reserve:24, spread:0.018, kind:'hitscan'},
+    {id:'p226',   name:'P226 ?앺떚而?,     dmg:22, fireRate:180, mag:15, reserve:60, spread:0.014, kind:'hitscan'},
+    {id:'fiveseven', name:'?뚯씠釉뚯꽭釉?,   dmg:20, fireRate:150, mag:20, reserve:80, spread:0.013, kind:'hitscan'},
+    {id:'suppressed', name:'?뚯쓬 沅뚯킑',   dmg:16, fireRate:220, mag:12, reserve:48, spread:0.01,  kind:'hitscan'},
   ],
   rifle: [
     {id:'ak47',  name:'AK-47',        dmg:29, fireRate:110, mag:30, reserve:90, spread:0.02, kind:'hitscan', auto:true},
-    {id:'m4a1',  name:'M4A1 카빈',     dmg:24, fireRate:95,  mag:30, reserve:120,spread:0.015,kind:'hitscan', auto:true},
-    {id:'sniper',name:'AWM 저격소총',  dmg:95, fireRate:1300,mag:5,  reserve:20, spread:0.003,kind:'hitscan', auto:false},
-    {id:'smg',   name:'MP5 기관단총',  dmg:15, fireRate:75,  mag:40, reserve:160,spread:0.03, kind:'hitscan', auto:true},
-    {id:'lmg',   name:'M249 경기관총', dmg:22, fireRate:65,  mag:100,reserve:200,spread:0.035,kind:'hitscan', auto:true},
-    {id:'shotgun',name:'펌프 샷건',    dmg:14, fireRate:750, mag:6,  reserve:24, spread:0.09, kind:'hitscan', auto:false, pellets:8},
+    {id:'m4a1',  name:'M4A1 移대퉰',     dmg:24, fireRate:95,  mag:30, reserve:120,spread:0.015,kind:'hitscan', auto:true},
+    {id:'sniper',name:'AWM ?寃⑹냼珥?,  dmg:95, fireRate:1300,mag:5,  reserve:20, spread:0.003,kind:'hitscan', auto:false},
+    {id:'smg',   name:'MP5 湲곌??⑥킑',  dmg:15, fireRate:75,  mag:40, reserve:160,spread:0.03, kind:'hitscan', auto:true},
+    {id:'lmg',   name:'M249 寃쎄린愿珥?, dmg:22, fireRate:65,  mag:100,reserve:200,spread:0.035,kind:'hitscan', auto:true},
+    {id:'shotgun',name:'?뚰봽 ?룰굔',    dmg:14, fireRate:750, mag:6,  reserve:24, spread:0.09, kind:'hitscan', auto:false, pellets:8},
   ],
   knife: [
-    {id:'combat',   name:'전투 나이프',   dmg:42, range:2.2, cd:420, kind:'melee'},
-    {id:'karambit', name:'카람빗',        dmg:34, range:2.0, cd:280, kind:'melee'},
-    {id:'machete',  name:'마체테',        dmg:58, range:2.4, cd:600, kind:'melee'},
-    {id:'butterfly',name:'버터플라이 나이프',dmg:28,range:1.9, cd:220, kind:'melee'},
-    {id:'hatchet',  name:'손도끼',        dmg:50, range:2.3, cd:500, kind:'melee'},
-    {id:'bayonet',  name:'군용 대검',     dmg:45, range:2.5, cd:480, kind:'melee'},
+    {id:'combat',   name:'?꾪닾 ?섏씠??,   dmg:42, range:2.2, cd:420, kind:'melee'},
+    {id:'karambit', name:'移대엺鍮?,        dmg:34, range:2.0, cd:280, kind:'melee'},
+    {id:'machete',  name:'留덉껜??,        dmg:58, range:2.4, cd:600, kind:'melee'},
+    {id:'butterfly',name:'踰꾪꽣?뚮씪???섏씠??,dmg:28,range:1.9, cd:220, kind:'melee'},
+    {id:'hatchet',  name:'?먮룄??,        dmg:50, range:2.3, cd:500, kind:'melee'},
+    {id:'bayonet',  name:'援곗슜 ?寃',     dmg:45, range:2.5, cd:480, kind:'melee'},
   ],
   bomb: [
-    {id:'frag',   name:'수류탄',   dmg:85,  radius:7, count:3, fuse:1600, kind:'throw', kind2:'frag'},
-    {id:'molotov',name:'화염병',   dmg:14,  radius:5, count:2, fuse:900,  kind:'throw', kind2:'fire', tickMs:600, ticks:5},
-    {id:'smoke',  name:'연막탄',   dmg:0,   radius:6, count:3, fuse:900,  kind:'throw', kind2:'smoke'},
-    {id:'c4',     name:'C4 폭발물',dmg:150, radius:9, count:2, fuse:2200, kind:'throw', kind2:'frag'},
-    {id:'flash',  name:'섬광탄',   dmg:0,   radius:9, count:2, fuse:1200, kind:'throw', kind2:'flash'},
-    {id:'claymore',name:'클레이모어', dmg:120, radius:6.5, count:1, fuse:99999, kind:'throw', kind2:'mine', trigger:2.6},
+    {id:'frag',   name:'?섎쪟??,   dmg:85,  radius:7, count:3, fuse:1600, kind:'throw', kind2:'frag'},
+    {id:'molotov',name:'?붿뿼蹂?,   dmg:14,  radius:5, count:2, fuse:900,  kind:'throw', kind2:'fire', tickMs:600, ticks:5},
+    {id:'smoke',  name:'?곕쭑??,   dmg:0,   radius:6, count:3, fuse:900,  kind:'throw', kind2:'smoke'},
+    {id:'c4',     name:'C4 ??컻臾?,dmg:150, radius:9, count:2, fuse:2200, kind:'throw', kind2:'frag'},
+    {id:'flash',  name:'?ш킅??,   dmg:0,   radius:9, count:2, fuse:1200, kind:'throw', kind2:'flash'},
+    {id:'claymore',name:'?대젅?대え??, dmg:120, radius:6.5, count:1, fuse:99999, kind:'throw', kind2:'mine', trigger:2.6},
   ]
 };
 const CATS = ['pistol','rifle','knife','bomb'];
-const CAT_LABEL = {pistol:'권총 PISTOL', rifle:'소총 RIFLE', knife:'칼 KNIFE', bomb:'폭탄 BOMB'};
+const CAT_LABEL = {pistol:'沅뚯킑 PISTOL', rifle:'?뚯킑 RIFLE', knife:'移?KNIFE', bomb:'??깂 BOMB'};
 
 const AI_DAMAGE_MULT = 0.55; // AI-dealt damage is scaled down so bots are less lethal overall
 const DIFFICULTIES = [
-  {id:1, name:'루키',      sub:'AI 4명 · 정확도 낮음',  aiCount:4,  acc:0.12, hp:75,  reactMs:900, fireMul:1.3},
-  {id:2, name:'노멀',      sub:'AI 6명 · 표준',        aiCount:6,  acc:0.26, hp:100, reactMs:650, fireMul:1.1},
-  {id:3, name:'베테랑',    sub:'AI 8명 · 공격적',      aiCount:8,  acc:0.40, hp:100, reactMs:450, fireMul:0.95},
-  {id:4, name:'하드코어',  sub:'AI 10명 · 매우 공격적', aiCount:10, acc:0.55, hp:120, reactMs:300, fireMul:0.8},
-  {id:5, name:'나이트메어',sub:'AI 13명 · 아포칼립스',  aiCount:13, acc:0.72, hp:140, reactMs:180, fireMul:0.65},
-  {id:6, name:'지옥',      sub:'AI 19명 · 완전한 절망', aiCount:19, acc:0.82, hp:165, reactMs:120, fireMul:0.5},
+  {id:1, name:'猷⑦궎',      sub:'AI 4紐?쨌 ?뺥솗????쓬',  aiCount:4,  acc:0.12, hp:75,  reactMs:900, fireMul:1.3},
+  {id:2, name:'?몃?',      sub:'AI 6紐?쨌 ?쒖?',        aiCount:6,  acc:0.26, hp:100, reactMs:650, fireMul:1.1},
+  {id:3, name:'踰좏뀒??,    sub:'AI 8紐?쨌 怨듦꺽??,      aiCount:8,  acc:0.40, hp:100, reactMs:450, fireMul:0.95},
+  {id:4, name:'?섎뱶肄붿뼱',  sub:'AI 10紐?쨌 留ㅼ슦 怨듦꺽??, aiCount:10, acc:0.55, hp:120, reactMs:300, fireMul:0.8},
+  {id:5, name:'?섏씠?몃찓??,sub:'AI 13紐?쨌 ?꾪룷移쇰┰??,  aiCount:13, acc:0.72, hp:140, reactMs:180, fireMul:0.65},
+  {id:6, name:'吏??,      sub:'AI 19紐?쨌 ?꾩쟾???덈쭩', aiCount:19, acc:0.82, hp:165, reactMs:120, fireMul:0.5},
 ];
 
 /* ===================== STATE ===================== */
@@ -792,8 +792,8 @@ let pointerLocked = false;
 /* ===================== MENU BUILD ===================== */
 let selectedMode = 'solo';
 const GAME_MODES = [
-  {id:'solo', name:'솔로', sub:'개인전 · 최후의 1인'},
-  {id:'squad', name:'스쿼드 (팀전)', sub:'4인 팀 · 최후의 팀이 승리'},
+  {id:'solo', name:'?붾줈', sub:'媛쒖씤??쨌 理쒗썑??1??},
+  {id:'squad', name:'?ㅼ옘??(???', sub:'4??? 쨌 理쒗썑??????밸━'},
 ];
 const modeRow = document.getElementById('modeRow');
 GAME_MODES.forEach((m,idx)=>{
@@ -835,11 +835,11 @@ CATS.forEach(cat=>{
     const opt = document.createElement('div');
     opt.className = 'wpn-opt';
     let statStr = '';
-    if(w.kind==='hitscan') statStr = w.pellets ? `DMG ${w.dmg}x${w.pellets} · MAG ${w.mag}` : `DMG ${w.dmg} · MAG ${w.mag}`;
-    else if(w.kind==='melee') statStr = `DMG ${w.dmg} · SPD`;
-    else if(w.kind2==='mine') statStr = `DMG ${w.dmg} · 감지식`;
-    else if(w.kind2==='flash') statStr = `실명 · x${w.count}`;
-    else statStr = `DMG ${w.dmg} · x${w.count}`;
+    if(w.kind==='hitscan') statStr = w.pellets ? `DMG ${w.dmg}x${w.pellets} 쨌 MAG ${w.mag}` : `DMG ${w.dmg} 쨌 MAG ${w.mag}`;
+    else if(w.kind==='melee') statStr = `DMG ${w.dmg} 쨌 SPD`;
+    else if(w.kind2==='mine') statStr = `DMG ${w.dmg} 쨌 媛먯???;
+    else if(w.kind2==='flash') statStr = `?ㅻ챸 쨌 x${w.count}`;
+    else statStr = `DMG ${w.dmg} 쨌 x${w.count}`;
     opt.innerHTML = `<span class="n">${w.name}</span><span class="s">${statStr}</span>`;
     opt.onclick = ()=>{
       block.querySelectorAll('.wpn-opt').forEach(o=>o.classList.remove('sel'));
@@ -878,7 +878,7 @@ cheatInput.addEventListener('blur', ()=>{
   }, 30);
 });
 cheatInput.addEventListener('input', ()=>{
-  if(cheatInput.value.includes('joshua')){
+  if(cheatInput.value.includes('야르')){
     devModeEnabled = true;
     cheatInput.value = '';
     const toast = document.getElementById('devModeToast');
@@ -926,15 +926,15 @@ function waitForIceGathering(pc){
 function setupDataChannelHandlers(){
   dataChannel.onopen = ()=>{
     multiplayerConnected = true;
-    mpSetStatus('연결됨 - 같이 시작하세요!', true);
+    mpSetStatus('?곌껐??- 媛숈씠 ?쒖옉?섏꽭??', true);
   };
   dataChannel.onclose = ()=>{
     multiplayerConnected = false;
-    mpSetStatus('연결 끊김', false);
+    mpSetStatus('?곌껐 ?딄?', false);
   };
-  dataChannel.onerror = (e)=>{ console.error('데이터 채널 오류:', e); };
+  dataChannel.onerror = (e)=>{ console.error('?곗씠??梨꾨꼸 ?ㅻ쪟:', e); };
   dataChannel.onmessage = (e)=>{
-    try{ handleNetMessage(JSON.parse(e.data)); }catch(err){ console.error('메시지 파싱 실패:', err); }
+    try{ handleNetMessage(JSON.parse(e.data)); }catch(err){ console.error('硫붿떆吏 ?뚯떛 ?ㅽ뙣:', err); }
   };
 }
 
@@ -942,7 +942,7 @@ async function mpStartHost(){
   isHost = true;
   document.getElementById('mpHostFlow').style.display = 'block';
   document.getElementById('mpJoinFlow').style.display = 'none';
-  mpSetStatus('초대 코드 생성 중...', false);
+  mpSetStatus('珥덈? 肄붾뱶 ?앹꽦 以?..', false);
   peerConnection = new RTCPeerConnection(RTC_CONFIG);
   dataChannel = peerConnection.createDataChannel('game', {ordered:false, maxRetransmits:0});
   setupDataChannelHandlers();
@@ -950,7 +950,7 @@ async function mpStartHost(){
   await peerConnection.setLocalDescription(offer);
   await waitForIceGathering(peerConnection);
   document.getElementById('mpOfferCode').value = btoa(JSON.stringify(peerConnection.localDescription));
-  mpSetStatus('코드를 친구에게 전달하세요', false);
+  mpSetStatus('肄붾뱶瑜?移쒓뎄?먭쾶 ?꾨떖?섏꽭??, false);
 }
 
 async function mpCompleteHostConnect(){
@@ -959,10 +959,10 @@ async function mpCompleteHostConnect(){
   try{
     const desc = JSON.parse(atob(raw));
     await peerConnection.setRemoteDescription(desc);
-    mpSetStatus('연결 시도 중...', false);
+    mpSetStatus('?곌껐 ?쒕룄 以?..', false);
   }catch(err){
-    console.error('참가 코드 처리 실패:', err);
-    mpSetStatus('코드가 올바르지 않습니다', false);
+    console.error('李멸? 肄붾뱶 泥섎━ ?ㅽ뙣:', err);
+    mpSetStatus('肄붾뱶媛 ?щ컮瑜댁? ?딆뒿?덈떎', false);
   }
 }
 
@@ -970,7 +970,7 @@ function mpStartJoin(){
   isHost = false;
   document.getElementById('mpHostFlow').style.display = 'none';
   document.getElementById('mpJoinFlow').style.display = 'block';
-  mpSetStatus('초대 코드를 붙여넣으세요', false);
+  mpSetStatus('珥덈? 肄붾뱶瑜?遺숈뿬?ｌ쑝?몄슂', false);
 }
 
 async function mpGenerateAnswer(){
@@ -988,10 +988,10 @@ async function mpGenerateAnswer(){
     await peerConnection.setLocalDescription(answer);
     await waitForIceGathering(peerConnection);
     document.getElementById('mpAnswerCode').value = btoa(JSON.stringify(peerConnection.localDescription));
-    mpSetStatus('참가 코드를 친구에게 전달하세요', false);
+    mpSetStatus('李멸? 肄붾뱶瑜?移쒓뎄?먭쾶 ?꾨떖?섏꽭??, false);
   }catch(err){
-    console.error('초대 코드 처리 실패:', err);
-    mpSetStatus('코드가 올바르지 않습니다', false);
+    console.error('珥덈? 肄붾뱶 泥섎━ ?ㅽ뙣:', err);
+    mpSetStatus('肄붾뱶媛 ?щ컮瑜댁? ?딆뒿?덈떎', false);
   }
 }
 
@@ -1002,7 +1002,7 @@ document.getElementById('mpSoloBtn').addEventListener('click', ()=>{
   document.getElementById('mpJoinFlow').style.display = 'none';
   if(peerConnection){ try{ peerConnection.close(); }catch(err){ /* ignore */ } }
   peerConnection = null; dataChannel = null; multiplayerConnected = false;
-  mpSetStatus('연결 안 됨', false);
+  mpSetStatus('?곌껐 ????, false);
 });
 document.getElementById('mpCompleteConnect').addEventListener('click', ()=>{ mpCompleteHostConnect(); });
 document.getElementById('mpGenAnswer').addEventListener('click', ()=>{ mpGenerateAnswer(); });
@@ -1125,7 +1125,7 @@ function initGame(){
   spawnPickups();
 
   if(multiplayerConnected){
-    remoteActor = createActor({isPlayer:false, hp:100, name:'상대 플레이어'});
+    remoteActor = createActor({isPlayer:false, hp:100, name:'?곷? ?뚮젅?댁뼱'});
     remoteActor.isRemote = true;
     remoteActor.team = player.team; // co-op: same side as the local player
     remoteActor.jacketMat.color.setHex(0xffe066);
@@ -1600,7 +1600,7 @@ function createActor({isPlayer, hp, name}){
 
 function spawnAI(count){
   for(let i=0;i<count;i++){
-    const a = createActor({isPlayer:false, hp:selectedDiff.hp, name:'경쟁자-'+(i+1)});
+    const a = createActor({isPlayer:false, hp:selectedDiff.hp, name:'寃쎌웳??'+(i+1)});
     const sp = randomSpawnPoint();
     a.pos.set(sp.x, 1.7, sp.z);
     const pistol = pick(WEAPON_DATA.pistol);
@@ -1689,15 +1689,15 @@ function applyPickup(p){
   if(p.type==='heal'){
     const before = player.hp;
     player.hp = Math.min(player.maxHp, player.hp+40);
-    showPickupToast(`메드킷 획득 (+${Math.round(player.hp-before)} HP)`);
+    showPickupToast(`硫붾뱶???띾뱷 (+${Math.round(player.hp-before)} HP)`);
   } else if(p.type==='shield'){
     const before = player.shield;
     player.shield = Math.min(100, player.shield+50);
-    showPickupToast(`보호막 획득 (+${Math.round(player.shield-before)})`);
+    showPickupToast(`蹂댄샇留??띾뱷 (+${Math.round(player.shield-before)})`);
   } else {
     player.equipped.pistol.curReserve += 40;
     player.equipped.rifle.curReserve += 60;
-    showPickupToast('탄약 상자 획득 (+예비탄)');
+    showPickupToast('?꾩빟 ?곸옄 ?띾뱷 (+?덈퉬??');
   }
   playPickupSfx();
 }
@@ -2308,7 +2308,7 @@ function emergencyTeleport(){
   const spot = randomSpawnPoint();
   player.pos.set(spot.x, getGroundHeight(spot.x, spot.z) + 1.7, spot.z);
   triggerFlashWhiteout(0.5);
-  addKillfeed('⚡ 비상 순간이동 발동');
+  addKillfeed('??鍮꾩긽 ?쒓컙?대룞 諛쒕룞');
   playPickupSfx();
 }
 
@@ -2325,9 +2325,9 @@ function killActor(target, attacker){
       camera.updateProjectionMatrix();
     }catch(err){ /* ignore */ }
   }
-  const killerName = attacker ? (attacker.isPlayer? '당신' : attacker.name) : '구역';
+  const killerName = attacker ? (attacker.isPlayer? '?뱀떊' : attacker.name) : '援ъ뿭';
   const weaponUsed = attacker ? weaponNameForKillfeed(attacker) : '';
-  addKillfeed(`${killerName} ${weaponUsed ? '['+weaponUsed+']' : ''}  ▶  ${target.name===  'YOU'?'당신':target.name}`);
+  addKillfeed(`${killerName} ${weaponUsed ? '['+weaponUsed+']' : ''}  ?? ${target.name===  'YOU'?'?뱀떊':target.name}`);
   if(attacker && attacker.isPlayer && attacker.kills!==undefined && attacker!==target){
     attacker.kills++;
     document.getElementById('killNum').textContent = attacker.kills;
@@ -2364,7 +2364,7 @@ function enterSpectate(killer){
     const bar = document.getElementById('spectateBar');
     bar.style.display = 'flex';
   }catch(err){ console.error('spectateBar show failed:', err); }
-  try{ document.getElementById('spectateLabel').textContent = '관전 중:'; }catch(err){ /* ignore */ }
+  try{ document.getElementById('spectateLabel').textContent = '愿??以?'; }catch(err){ /* ignore */ }
   try{ document.getElementById('spectateName').textContent = spectateTarget ? spectateTarget.name : '-'; }catch(err){ /* ignore */ }
   try{ if(document.exitPointerLock) document.exitPointerLock(); }catch(err){ /* ignore */ }
 }
@@ -2414,12 +2414,12 @@ function checkWin(){
     } else if(teamWon && gameMode==='squad'){
       if(!spectateEndPending){
         spectateEndPending = true;
-        document.getElementById('spectateLabel').textContent = '우리 팀이 승리 중 -';
+        document.getElementById('spectateLabel').textContent = '?곕━ ????밸━ 以?-';
         setTimeout(()=>{ if(gameActive) endMatch(true); }, 1800);
       }
     } else if(spectating && !spectateEndPending){
       spectateEndPending = true;
-      document.getElementById('spectateLabel').textContent = '경기 종료 -';
+      document.getElementById('spectateLabel').textContent = '寃쎄린 醫낅즺 -';
       setTimeout(()=>{ if(gameActive) endMatch(false); }, 2200);
     }
   }
@@ -3019,7 +3019,7 @@ function updateZone(now){
   const remainMs = Math.max(0, ZONE_SHRINK_START+ZONE_SHRINK_DURATION - elapsed);
   const mm = Math.floor(remainMs/60000);
   const ss = Math.floor((remainMs%60000)/1000);
-  document.getElementById('zoneTimer').textContent = currentZoneR<=ZONE_MIN_R+0.5 ? '최종 구역' : `구역 축소까지: ${mm}:${ss.toString().padStart(2,'0')}`;
+  document.getElementById('zoneTimer').textContent = currentZoneR<=ZONE_MIN_R+0.5 ? '理쒖쥌 援ъ뿭' : `援ъ뿭 異뺤냼源뚯?: ${mm}:${ss.toString().padStart(2,'0')}`;
 }
 
 /* ===================== HUD ===================== */
@@ -3036,11 +3036,11 @@ function updateHUD(){
   if(w.kind==='hitscan'){
     document.getElementById('ammoCount').innerHTML = `${w.curMag} <span>/ ${w.curReserve}</span>`;
   } else if(w.kind==='melee'){
-    document.getElementById('ammoCount').innerHTML = `<span>근접무기</span>`;
+    document.getElementById('ammoCount').innerHTML = `<span>洹쇱젒臾닿린</span>`;
   } else {
-    document.getElementById('ammoCount').innerHTML = `${w.curCount} <span>개 남음</span>`;
+    document.getElementById('ammoCount').innerHTML = `${w.curCount} <span>媛??⑥쓬</span>`;
   }
-  document.getElementById('bombCharge').textContent = `폭탄: ${player.equipped.bomb.curCount}`;
+  document.getElementById('bombCharge').textContent = `??깂: ${player.equipped.bomb.curCount}`;
 }
 
 function updateAliveUI(){
@@ -3048,7 +3048,7 @@ function updateAliveUI(){
   document.getElementById('aliveNum').textContent = n;
   if(gameMode==='squad'){
     const teams = new Set(actors.filter(a=>a.alive).map(a=>a.team)).size;
-    document.getElementById('aliveNum').textContent = `${n} (팀 ${teams})`;
+    document.getElementById('aliveNum').textContent = `${n} (? ${teams})`;
   }
 }
 
@@ -3099,12 +3099,12 @@ function endMatch(won){
   const rank = (player && player.finalRank) || (actors.filter(a=>a.alive).length + 1);
   const kills = player ? (player.kills||0) : 0;
 
-  // 캐시 저장 (비동기, 오류나도 화면은 표시)
+  // 罹먯떆 ???(鍮꾨룞湲? ?ㅻ쪟?섎룄 ?붾㈃? ?쒖떆)
   if(typeof window.saveGameResult === 'function'){
     window.saveGameResult(won, rank, kills).then(cashEarned=>{
       try{
         const ce = document.getElementById('endCashEarned');
-        if(ce && cashEarned > 0) ce.textContent = `+${cashEarned} 💰 캐시 획득! (누적: ${window._userData.cash} 💰)`;
+        if(ce && cashEarned > 0) ce.textContent = `+${cashEarned} ?뮥 罹먯떆 ?띾뱷! (?꾩쟻: ${window._userData.cash} ?뮥)`;
       }catch(e){}
     }).catch(e=>console.error(e));
   }
@@ -3118,12 +3118,12 @@ function endMatch(won){
       title.textContent = '# 1 CHICKEN DINNER';
       title.className = 'win';
       sub.textContent = (!player.alive && gameMode==='squad')
-        ? '당신은 먼저 탈락했지만, 우리 팀이 최후까지 살아남았습니다.'
-        : '최후의 생존자가 되었습니다.';
+        ? '?뱀떊? 癒쇱? ?덈씫?덉?留? ?곕━ ???理쒗썑源뚯? ?댁븘?⑥븯?듬땲??'
+        : '理쒗썑???앹〈?먭? ?섏뿀?듬땲??';
     } else {
       title.textContent = 'ELIMINATED';
       title.className = 'lose';
-      sub.textContent = `최종 순위: #${rank}`;
+      sub.textContent = `理쒖쥌 ?쒖쐞: #${rank}`;
     }
     end.style.display = 'flex';
   }catch(err){
@@ -3134,7 +3134,7 @@ function endMatch(won){
 
   try{
     document.getElementById('endStats').textContent =
-      `처치 ${kills} · 입힌 피해 ${Math.round(player.damageDealt||0)}`;
+      `泥섏튂 ${kills} 쨌 ?낇엺 ?쇳빐 ${Math.round(player.damageDealt||0)}`;
   }catch(err){ console.error('endStats update failed:', err); }
 
   try{ document.exitPointerLock(); }catch(err){ /* ignore */ }
