@@ -1,1 +1,7 @@
-﻿{"rewrites":[{"source":"/","destination":"/fps_battle_royale.html"}]}
+﻿{
+  "version": 2,
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
